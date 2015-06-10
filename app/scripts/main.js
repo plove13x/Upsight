@@ -1,27 +1,31 @@
+'use strict';
+
+
 function validate(stringArg) {
   var lowercaseLtrs = ['a','b','c','d','e','f','g','h','i','j'];
   var uppercaseLtrs = ['N', 'L', 'Q', 'R'];
   var stringLength = stringArg.length;
 
   if (stringLength === 1) {
-	if (lowercaseLtrs.indexOf(stringArg) > -1) {
-	  return true;
-	} else {
+  	if (lowercaseLtrs.indexOf(stringArg) > -1) {
+  	  return true;
+  	} else {
       return false;
-	}
+  	}
   }
 
   if (stringArg.charAt(0) === 'Z') {
     return validate(stringArg.substring(1));
   } else if (!(uppercaseLtrs.indexOf(stringArg.charAt(0)) > -1 )) {
-	return false;
+	  return false;
   }
 
   for (var i = 0; i < (stringLength - 1); i++) {
     if (validate(stringArg.substr(1, 1+i)) && validate(stringArg.substr(2+i))) {
-	  return true;
-	}
+	    return true;
+	  }
   }
+
 }
 
 function validateString(stringArg){
@@ -36,4 +40,5 @@ function validateString(stringArg){
   	}
  	console.log(strings[i] + " " + valid);
   }
+  
 }
