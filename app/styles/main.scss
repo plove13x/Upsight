@@ -1,0 +1,225 @@
+//global style
+
+* {
+    box-sizing: border-box;         // Frowned upon by some I know. I would be curious how you might handle this.
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+//header style
+
+header {
+    height: 4em;
+    background: #202121;
+    color: #C0C1C2;
+
+    div {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+}
+
+.leftHeaderPic {
+    width: 25%;
+    padding: 0.5em;
+
+    .borderRadius {
+        border-radius: 50px;
+    }
+
+}
+
+.centerHeaderText {
+    width: 50%;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.rightHeaderBtn {
+    width: 25%;
+    padding: 1em;
+    text-align: right;
+
+    .downloadButton {
+        padding: 1em;
+        border: none;
+        border-radius: 3px;
+        background: #6088FB;
+        color: white;
+    }
+
+}
+
+
+.blackBar {
+    height: 1.2em;
+    background: black;
+}
+
+.purpleBar {
+    padding: 0.4em;
+    height: 1.8em;
+    text-align: right;
+    background: #4a3b61;
+    color: white;
+
+    a {
+        margin-left: 1em;
+    }
+}
+
+
+//mainContainer style
+
+.mainContainer {
+    width: 100%;
+}
+
+.leftSidebar {
+    display: inline-block;
+    width: 12.5%;
+    min-height: 50em;
+    vertical-align: top;
+    background: -webkit-linear-gradient(#f15d3f, #fcaf5a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f15d3f, #fcaf5a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f15d3f, #fcaf5a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f15d3f, #fcaf5a);
+    color: white;
+
+    a {
+        display: block;
+    }
+
+    a:active {
+        color: rgba(170, 89, 77, 0.7);
+    }
+
+    a:hover {
+        color: rgba(250, 186, 143, 0.5);
+    }
+
+    h3 {
+        border-bottom: 2px solid #F8B891;
+    }
+
+    h4 {
+        text-shadow: 1px 1px 2px #000000;
+    }
+
+    .bottomLeftNav {
+        margin-top: 10em;
+    }
+
+}
+
+
+// layout of component sections
+
+#main {
+    display: inline-block;
+    width: 87.5%;
+    min-height: 50em;
+    vertical-align: top;
+    background: #EEEEEE;
+
+    .componentsRow {
+        margin: 0.5em;
+    }
+
+    section {
+        border: 1px solid #CCCCCC;
+        background: white;
+        position: relative;
+
+        h4 {
+            margin: 0;
+            padding: 1em;
+            border-bottom: 1px solid #EEEEEE;
+            color: #646464;
+        }
+    }
+
+    .halfWidth {
+        display: inline-block;
+        width: 49.5%;
+    }
+
+    .halfWidth:first-child {
+        margin-right: 1%;
+    }
+
+}
+
+
+// more detailed component styling
+
+.rowWithinComponent {
+    padding: 0.5em;
+}
+
+.alignRightInComponent {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+
+select {
+    padding: 1em;
+    width: 20%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.newDropIcon {
+    background: url(http://www.iberkshires.com/realestate/calendar_icon.gif) 96% / 15% no-repeat #eee;
+}
+
+.componentButton {
+    background: #49a240;
+    border: 1px solid #419039;
+    border-radius: 3px;
+    color: white;
+}
+
+.whiteSpace {
+    min-height: 15em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+}
