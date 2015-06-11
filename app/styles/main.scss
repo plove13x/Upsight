@@ -98,6 +98,8 @@ header {
 
     a {
         display: block;
+        padding-left: 3.5em;
+        font-size: 0.8em;
     }
 
     a:active {
@@ -105,19 +107,23 @@ header {
     }
 
     a:hover {
-        color: rgba(250, 186, 143, 0.5);
+        // background: rgba(250, 186, 143, 0.5);
+        background: #BC5C4C;
     }
 
     h3 {
-        border-bottom: 2px solid #F8B891;
+        padding-left: 0.5em;
+        border-bottom: 3px solid #F8B891;
     }
 
     h4 {
+        padding-left: 0.25em;
         text-shadow: 1px 1px 2px #000000;
+        margin: 0.5em;
     }
 
     .bottomLeftNav {
-        margin-top: 10em;
+        margin-top: 18em;
     }
 
 }
